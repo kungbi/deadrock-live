@@ -56,8 +56,8 @@ Open [http://127.0.0.1:4173](http://127.0.0.1:4173) in a browser.
 ```text
 .
 ├── index.html          # page structure and public event facts
-├── halloween.css       # terminal visual system and responsive layout
-├── halloween.js        # timetable, setlist, interaction rendering
+├── deadrock.css        # terminal visual system and responsive layout
+├── deadrock.js         # timetable, setlist, interaction rendering
 ├── event-data.js       # editable schedule, lineup and setlist data
 ├── deadrock-pixel.svg  # pixel wordmark
 └── DESIGN.md           # color and typography rules
