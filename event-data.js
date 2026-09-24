@@ -6,6 +6,20 @@ const EVENT_DATE = Object.freeze({
   day: 31
 });
 
+const EVENT_VENUE = Object.freeze({
+  name: "신촌 스팀펑크락 라이브펍 B1",
+  titleLines: ["신촌 스팀펑크락", "라이브펍"],
+  label: "B1 · SINCHON",
+  addressShort: "서울 서대문구 연세로9길 13",
+  addressWithFloor: "서울 서대문구 연세로9길 13 · 지하 1층",
+  mapUrl: "https://naver.me/GdT4kvAi",
+  directions: {
+    subway: "2호선 신촌역 1·2번 출구 · 도보 5분",
+    bus: "연세로·명물거리 정류장 · 도보 1분",
+    entrance: "연세로9길 13 건물 · 지하 1층"
+  }
+});
+
 const START_UP_SESSIONS = [
   { role: "VOCAL", names: ["박지혜"] },
   { role: "DRUM", names: ["김도연"] },
@@ -96,7 +110,8 @@ const CLOUD_CLUB_BAND_SESSIONS = {
 
 window.EVENT_DATA = {
   event: {
-    date: EVENT_DATE
+    date: EVENT_DATE,
+    venue: EVENT_VENUE
   },
   schedule: [
     {

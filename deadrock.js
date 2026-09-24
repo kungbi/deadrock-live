@@ -36,6 +36,37 @@
     node.textContent = formatEventDate(node.dataset.eventDate);
   });
 
+  const venue = data.event?.venue;
+  const formatVenue = (format) => {
+    if (!venue) return '';
+
+    const formats = {
+      name: venue.name,
+      label: venue.label,
+      'address-short': venue.addressShort,
+      'address-with-floor': venue.addressWithFloor,
+      subway: venue.directions.subway,
+      bus: venue.directions.bus,
+      entrance: venue.directions.entrance
+    };
+
+    return formats[format] ?? '';
+  };
+
+  document.querySelectorAll('[data-event-venue]').forEach((node) => {
+    node.textContent = formatVenue(node.dataset.eventVenue);
+  });
+  document.querySelectorAll('[data-event-venue-map]').forEach((node) => {
+    node.href = venue?.mapUrl ?? '#';
+  });
+  const venueTitle = document.querySelector('[data-event-venue-title]');
+  if (venueTitle && venue) {
+    venue.titleLines.forEach((line, index) => {
+      if (index) venueTitle.append(document.createElement('br'));
+      venueTitle.append(line);
+    });
+  }
+
   const renderSessions = (sessions = []) => {
     if (!sessions.length) return '<p class="session-pending">SESSIONS TBA</p>';
 

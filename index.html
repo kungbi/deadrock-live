@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="deadrock.css?v=1">
-  <script src="event-data.js?v=38" defer></script>
-  <script src="deadrock.js?v=2" defer></script>
+  <script src="event-data.js?v=39" defer></script>
+  <script src="deadrock.js?v=3" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#event-detail">공연 정보로 바로가기</a>
@@ -80,7 +80,7 @@
         </div>
         <div>
           <dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>PLACE</span></dt>
-          <dd><strong>신촌 스팀펑크락 라이브펍 B1</strong><span>서울 서대문구 연세로9길 13</span></dd>
+          <dd><strong data-event-venue="name"></strong><span data-event-venue="address-short"></span></dd>
         </div>
       </dl>
 
@@ -120,17 +120,17 @@
     </section>
 
     <section class="venue" id="venue" aria-labelledby="venue-title">
-      <div class="venue-heading"><span>VENUE</span><small>B1 · SINCHON</small></div>
+      <div class="venue-heading"><span>VENUE</span><small data-event-venue="label"></small></div>
       <pre class="sql-query">mysql&gt; SELECT name, address FROM venue;</pre>
-      <h2 id="venue-title">신촌 스팀펑크락<br>라이브펍</h2>
-      <p>서울 서대문구 연세로9길 13 · 지하 1층</p>
-      <a class="map-button" href="https://naver.me/GdT4kvAi" target="_blank" rel="noopener noreferrer">네이버 지도에서 보기 <span aria-hidden="true">↗</span></a>
+      <h2 id="venue-title" data-event-venue-title></h2>
+      <p data-event-venue="address-with-floor"></p>
+      <a class="map-button" data-event-venue-map target="_blank" rel="noopener noreferrer">네이버 지도에서 보기 <span aria-hidden="true">↗</span></a>
       <details class="route-details">
         <summary>오시는 길 <span aria-hidden="true"></span></summary>
         <dl>
-          <div><dt>SUBWAY</dt><dd>2호선 신촌역 1·2번 출구 · 도보 5분</dd></div>
-          <div><dt>BUS</dt><dd>연세로·명물거리 정류장 · 도보 1분</dd></div>
-          <div><dt>ENTRANCE</dt><dd>연세로9길 13 건물 · 지하 1층</dd></div>
+          <div><dt>SUBWAY</dt><dd data-event-venue="subway"></dd></div>
+          <div><dt>BUS</dt><dd data-event-venue="bus"></dd></div>
+          <div><dt>ENTRANCE</dt><dd data-event-venue="entrance"></dd></div>
         </dl>
       </details>
     </section>
@@ -143,7 +143,7 @@
 
   <aside class="bottom-dock" aria-label="공연 핵심 행동">
     <div><span data-event-date="hero"></span><strong>17:10 START</strong></div>
-    <a href="https://naver.me/GdT4kvAi" target="_blank" rel="noopener noreferrer">장소 보기</a>
+    <a data-event-venue-map target="_blank" rel="noopener noreferrer">장소 보기</a>
   </aside>
 
   <noscript>공연 순서와 큐를 보려면 브라우저에서 JavaScript를 켜주세요.</noscript>
