@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#16151a">
+  <meta name="description" content="2026년 10월 31일 신촌에서 열리는 START-UP과 클클밴드의 라이브 공연 안내. 미공개 큐를 맞히면 공연 당일 상품을 드립니다.">
+  <meta property="og:title" content="데드락도 락이다">
+  <meta property="og:description" content="START-UP × 클클밴드 · 2026.10.31 · 신촌">
+  <title>데드락도 락이다</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="halloween.css?v=84">
+  <script src="event-data.js?v=37" defer></script>
+  <script src="halloween.js?v=46" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#event-detail">공연 정보로 바로가기</a>
+
+
+  <main>
+    <section class="cover" aria-label="공연 포스터">
+      <div class="cover-card">
+        <div class="cover-topline"><span>LIVE SESSION / STDERR</span><span>OCT 31 · SAT</span></div>
+        <pre class="terminal-log" aria-label="MySQL 데드락 로그"><span>$ mysql.server start</span>
+<span>Starting MySQL...</span>
+<img class="boot-logo" src="deadrock-pixel.svg" alt="DEADROCK">
+<span>mysql&gt; -- START-UP × 클클밴드</span>
+<span>mysql&gt; INSERT INTO bands VALUES ('START-UP');</span>
+<span>mysql&gt; INSERT INTO bands VALUES ('클클밴드');</span>
+<span>mysql&gt; START TRANSACTION;</span>
+<span>mysql&gt; SELECT * FROM queue FOR UPDATE;</span>
+<span class="terminal-error">ERROR 1213 (40001): Deadrock found</span>
+<span class="terminal-error">try restarting transaction._</span></pre>
+        <svg class="cover-art" viewBox="0 0 360 360" aria-hidden="true">
+          <defs>
+            <pattern id="cover-dots" width="7" height="7" patternUnits="userSpaceOnUse">
+              <circle cx="1.5" cy="1.5" r="1.15" fill="#17161b" opacity=".26"/>
+            </pattern>
+          </defs>
+          <circle class="cover-moon" cx="224" cy="160" r="118"/>
+          <path class="cover-cloud cloud-a" d="M18 115c27-25 58-26 89-3 25-13 51-8 68 12-35 7-71 10-109 9-19 0-35-6-48-18Z"/>
+          <path class="cover-cloud cloud-b" d="M183 205c25-20 52-18 76 3 24-13 48-6 67 15-31 7-64 9-98 8-20-1-35-9-45-26Z"/>
+          <g class="cover-ghost">
+            <path class="ghost-sheet" d="M92 336c8-29 14-62 14-97 0-69 33-119 78-119s78 50 78 119c0 35 6 68 14 97l-29-16-21 21-22-22-21 24-23-24-23 20-20-20-25 17Z"/>
+            <path class="ghost-shade" d="M122 316c18-51 18-117 51-180-38 7-67 49-67 103 0 35-6 68-14 97l25-17 20 20 13-12-28-11Z"/>
+            <ellipse class="ghost-eye" cx="157" cy="194" rx="12" ry="20" transform="rotate(-10 157 194)"/>
+            <ellipse class="ghost-eye" cx="210" cy="194" rx="12" ry="20" transform="rotate(10 210 194)"/>
+            <path class="ghost-mouth" d="M163 231c13-10 28-10 41 0-4 15-11 23-20 23s-17-8-21-23Z"/>
+          </g>
+          <path class="bat bat-a" d="M36 78c12-14 24-9 36 2 12-11 24-16 36-2-8-2-12 5-16 12-7-5-12-7-20-4-8-3-13-1-20 4-4-7-8-14-16-12Z"/>
+          <path class="bat bat-b" d="M246 77c10-12 20-7 31 2 10-9 20-13 31-2-7-1-10 4-14 10-6-4-10-6-17-3-7-3-11-1-17 3-4-6-7-11-14-10Z"/>
+          <rect width="360" height="360" fill="url(#cover-dots)" opacity=".45"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="event-detail" id="event-detail" aria-labelledby="event-title">
+      <div class="eyebrows"><span>LIVE</span><span>RUNTIME</span><span>SEOUL</span></div>
+      <pre class="sql-query">mysql&gt; SELECT '데드락도 락이다' AS title;</pre>
+      <h1 id="event-title">데드락도 락이다</h1>
+      <pre class="sql-query">mysql&gt; SELECT GROUP_CONCAT(
+    -&gt;   name SEPARATOR ' × '
+    -&gt; ) AS name FROM bands;</pre>
+      <p class="lineup">START-UP <span>×</span> 클클밴드</p>
+
+      <dl class="event-facts" aria-label="공연 핵심 정보">
+        <div>
+          <dt><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4M17 3v4M3 10h18"/></svg><span>DATE</span></dt>
+          <dd><strong>2026년 10월 31일 토요일</strong><span>하루만 열리는 라이브 공연</span></dd>
+        </div>
+        <div>
+          <dt><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/></svg><span>TIME</span></dt>
+          <dd><strong>입장 17:00 · 공연 17:10</strong><span>공연 종료 예정 19:45</span></dd>
+        </div>
+        <div>
+          <dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>PLACE</span></dt>
+          <dd><strong>신촌 스팀펑크락 라이브펍 B1</strong><span>서울 서대문구 연세로9길 13</span></dd>
+        </div>
+      </dl>
+
+
+    </section>
+
+    <nav class="section-nav" aria-label="공연 상세 섹션">
+      <a href="#schedule">일정</a>
+      <a href="#setlists">셋리스트</a>
+      <a href="#guide">안내</a>
+      <a href="#venue">장소</a>
+    </nav>
+
+
+    <section class="content-section schedule" id="schedule" aria-labelledby="schedule-title">
+      <header class="section-title">
+        <div><span>PROCESS LOG</span><h2 id="schedule-title">TIMELINE</h2></div>
+        <p>10.31 SAT</p>
+      </header>
+      <ol class="schedule-list" id="schedule-list"></ol>
+    </section>
+
+    <section class="content-section setlists" id="setlists" aria-labelledby="setlists-title">
+      <header class="section-title">
+        <div><span>WORKER POOL</span><h2 id="setlists-title">SETLIST</h2></div>
+        <p>2 ACTS</p>
+      </header>
+      <p class="section-description">곡을 누르면 연주 세션을 확인할 수 있습니다.</p>
+      <div id="band-list"></div>
+    </section>
+
+    <section class="content-section guide" id="guide" aria-labelledby="guide-title">
+      <header class="section-title">
+        <div><span>README</span><h2 id="guide-title">RUNTIME NOTES</h2></div>
+      </header>
+      <div class="guide-list" id="notice-list"></div>
+    </section>
+
+    <section class="venue" id="venue" aria-labelledby="venue-title">
+      <div class="venue-heading"><span>VENUE</span><small>B1 · SINCHON</small></div>
+      <pre class="sql-query">mysql&gt; SELECT name, address FROM venue;</pre>
+      <h2 id="venue-title">신촌 스팀펑크락<br>라이브펍</h2>
+      <p>서울 서대문구 연세로9길 13 · 지하 1층</p>
+      <a class="map-button" href="https://naver.me/GdT4kvAi" target="_blank" rel="noopener noreferrer">네이버 지도에서 보기 <span aria-hidden="true">↗</span></a>
+      <details class="route-details">
+        <summary>오시는 길 <span aria-hidden="true"></span></summary>
+        <dl>
+          <div><dt>SUBWAY</dt><dd>2호선 신촌역 1·2번 출구 · 도보 5분</dd></div>
+          <div><dt>BUS</dt><dd>연세로·명물거리 정류장 · 도보 1분</dd></div>
+          <div><dt>ENTRANCE</dt><dd>연세로9길 13 건물 · 지하 1층</dd></div>
+        </dl>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <strong>데드락도 락이다 · 2026</strong>
+    <a href="#top">맨 위로 ↑</a>
+  </footer>
+
+  <aside class="bottom-dock" aria-label="공연 핵심 행동">
+    <div><span>OCT 31 · SAT</span><strong>17:10 START</strong></div>
+    <a href="https://naver.me/GdT4kvAi" target="_blank" rel="noopener noreferrer">장소 보기</a>
+  </aside>
+
+  <noscript>공연 순서와 큐를 보려면 브라우저에서 JavaScript를 켜주세요.</noscript>
+</body>
+</html>
