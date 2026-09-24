@@ -7,6 +7,86 @@ const START_UP_SESSIONS = [
   { role: "KEYBOARD", names: ["정민찬"] }
 ];
 
+const CLOUD_CLUB_BAND_SESSIONS = {
+  doorLock: [
+            { role: "VOCAL", names: ["박시윤", "최재혁"] },
+            { role: "DRUM", names: ["원준영"] },
+            { role: "BASS", names: ["김화균"] },
+            { role: "KEYBOARD", names: ["우다현"] }
+  ],
+  willLove: [
+            { role: "VOCAL", names: ["박시윤"] },
+            { role: "DRUM", names: ["정민혁"] },
+            { role: "BASS", names: ["김화균"] },
+            { role: "GUITAR", names: ["김재현", "신웅비"] }
+  ],
+  yourMeaning: [
+            { role: "VOCAL", names: ["박시윤", "최재혁"] },
+            { role: "DRUM", names: ["원준영"] },
+            { role: "BASS", names: ["김화균"] },
+            { role: "GUITAR", names: ["김재현"] },
+            { role: "TBA", names: ["장민호"] }
+  ],
+  stellarCommunication: [
+            { role: "VOCAL", names: ["최재혁"] },
+            { role: "DRUM", names: ["정민혁"] },
+            { role: "BASS", names: ["이해준"] },
+            { role: "GUITAR", names: ["김재현", "신웅비"] }
+  ],
+  lingLing: [
+            { role: "VOCAL", names: ["최재혁"] },
+            { role: "DRUM", names: ["원준영"] },
+            { role: "BASS", names: ["인승진"] },
+            { role: "GUITAR", names: ["김재현"] },
+            { role: "KEYBOARD", names: ["우다현"] }
+  ],
+  bananaHighlighter: [
+            { role: "VOCAL", names: ["김재현"] },
+            { role: "DRUM", names: ["정민혁"] },
+            { role: "BASS", names: ["인승진"] },
+            { role: "GUITAR", names: ["신웅비", "김재현"] }
+  ],
+  belongingsInspection: [
+            { role: "VOCAL", names: ["김재현"] },
+            { role: "DRUM", names: ["원준영"] },
+            { role: "BASS", names: ["김화균"] },
+            { role: "GUITAR", names: ["김재현"] },
+            { role: "KEYBOARD", names: ["우다현"] }
+  ],
+  erebia: [
+            { role: "DRUM", names: ["양효빈"] },
+            { role: "BASS", names: ["이해준"] },
+            { role: "GUITAR", names: ["신웅비", "김재현"] },
+            { role: "TBA", names: ["윤민섭"] }
+  ],
+  pretender: [
+            { role: "DRUM", names: ["정민혁"] },
+            { role: "BASS", names: ["김화균"] },
+            { role: "GUITAR", names: ["신웅비", "임유빈"] },
+            { role: "KEYBOARD", names: ["우다현"] },
+            { role: "TBA", names: ["장민호", "윤민섭"] }
+  ],
+  confession: [
+            { role: "DRUM", names: ["정민혁"] },
+            { role: "BASS", names: ["인승진"] },
+            { role: "GUITAR", names: ["신웅비", "임유빈"] },
+            { role: "TBA", names: ["윤민섭", "장민호"] }
+  ],
+  monsoon: [
+            { role: "DRUM", names: ["양효빈"] },
+            { role: "BASS", names: ["인승진"] },
+            { role: "GUITAR", names: ["김재현"] },
+            { role: "KEYBOARD", names: ["우다현"] },
+            { role: "TBA", names: ["윤민섭"] }
+  ],
+  shakingTime: [
+            { role: "VOCAL", names: ["최재혁"] },
+            { role: "DRUM", names: ["양효빈"] },
+            { role: "BASS", names: ["이해준"] },
+            { role: "GUITAR", names: ["신웅비", "김재현"] }
+  ]
+};
+
 window.EVENT_DATA = {
   schedule: [
     {
@@ -103,149 +183,84 @@ window.EVENT_DATA = {
           title: "???",
           hint: "문단속 실패",
           secret: true,
-          sessions: [
-            { role: "VOCAL", names: ["박시윤", "최재혁"] },
-            { role: "DRUM", names: ["원준영"] },
-            { role: "BASS", names: ["김화균"] },
-            { role: "KEYBOARD", names: ["우다현"] }
-          ]
+          sessions: CLOUD_CLUB_BAND_SESSIONS.doorLock
         },
         {
           order: 3,
           title: "사랑하게 될거야",
           originalArtist: "한로로",
           videoUrl: "https://www.youtube.com/watch?v=h0KIWaUEIgQ",
-          sessions: [
-            { role: "VOCAL", names: ["박시윤"] },
-            { role: "DRUM", names: ["정민혁"] },
-            { role: "BASS", names: ["김화균"] },
-            { role: "GUITAR", names: ["김재현", "신웅비"] }
-          ]
+          sessions: CLOUD_CLUB_BAND_SESSIONS.willLove
         },
         {
           order: 2,
           title: "너의 의미",
           originalArtist: "아이유 (feat. 김창완)",
           videoUrl: "https://www.youtube.com/watch?v=4L-H_cXSNhQ",
-          sessions: [
-            { role: "VOCAL", names: ["박시윤", "최재혁"] },
-            { role: "DRUM", names: ["원준영"] },
-            { role: "BASS", names: ["김화균"] },
-            { role: "GUITAR", names: ["김재현"] },
-            { role: "TBA", names: ["장민호"] }
-          ]
+          sessions: CLOUD_CLUB_BAND_SESSIONS.yourMeaning
         },
         {
           order: 4,
           title: "항성통신",
           originalArtist: "너드커넥션",
           videoUrl: "https://www.youtube.com/watch?v=jv4ffkt4NF8",
-          sessions: [
-            { role: "VOCAL", names: ["최재혁"] },
-            { role: "DRUM", names: ["정민혁"] },
-            { role: "BASS", names: ["이해준"] },
-            { role: "GUITAR", names: ["김재현", "신웅비"] }
-          ]
+          sessions: CLOUD_CLUB_BAND_SESSIONS.stellarCommunication
         },
         {
           order: 5,
           title: "ling ling",
           originalArtist: "검정치마",
           videoUrl: "https://www.youtube.com/watch?v=CqQJVpO5vbQ",
-          sessions: [
-            { role: "VOCAL", names: ["최재혁"] },
-            { role: "DRUM", names: ["원준영"] },
-            { role: "BASS", names: ["인승진"] },
-            { role: "GUITAR", names: ["김재현"] },
-            { role: "KEYBOARD", names: ["우다현"] }
-          ]
+          sessions: CLOUD_CLUB_BAND_SESSIONS.lingLing
         },
         {
           order: 6,
           title: "???",
           hint: "바나나 형광펜",
           secret: true,
-          sessions: [
-            { role: "VOCAL", names: ["김재현"] },
-            { role: "DRUM", names: ["정민혁"] },
-            { role: "BASS", names: ["인승진"] },
-            { role: "GUITAR", names: ["신웅비", "김재현"] }
-          ]
+          sessions: CLOUD_CLUB_BAND_SESSIONS.bananaHighlighter
         },
         {
           order: 7,
           title: "???",
           hint: "소지품 검사 예정",
           secret: true,
-          sessions: [
-            { role: "VOCAL", names: ["김재현"] },
-            { role: "DRUM", names: ["원준영"] },
-            { role: "BASS", names: ["김화균"] },
-            { role: "GUITAR", names: ["김재현"] },
-            { role: "KEYBOARD", names: ["우다현"] }
-          ]
+          sessions: CLOUD_CLUB_BAND_SESSIONS.belongingsInspection
         },
         {
           order: 11,
           title: "erebia",
           originalArtist: "데이먼스 이어",
           videoUrl: "https://www.youtube.com/watch?v=NnftCQKqlr8",
-          sessions: [
-            { role: "DRUM", names: ["양효빈"] },
-            { role: "BASS", names: ["이해준"] },
-            { role: "GUITAR", names: ["신웅비", "김재현"] },
-            { role: "TBA", names: ["윤민섭"] }
-          ]
+          sessions: CLOUD_CLUB_BAND_SESSIONS.erebia
         },
         {
           order: 8,
           title: "pretender",
           originalArtist: "오피셜히게단디즘 (Official髭男dism)",
           videoUrl: "https://www.youtube.com/watch?v=TQ8WlA2GXbk",
-          sessions: [
-            { role: "DRUM", names: ["정민혁"] },
-            { role: "BASS", names: ["김화균"] },
-            { role: "GUITAR", names: ["신웅비", "임유빈"] },
-            { role: "KEYBOARD", names: ["우다현"] },
-            { role: "TBA", names: ["장민호", "윤민섭"] }
-          ]
+          sessions: CLOUD_CLUB_BAND_SESSIONS.pretender
         },
         {
           order: 9,
           title: "고백",
           originalArtist: "델리 스파이스",
           videoUrl: "https://www.youtube.com/watch?v=BYyVDi8BpZw",
-          sessions: [
-            { role: "DRUM", names: ["정민혁"] },
-            { role: "BASS", names: ["인승진"] },
-            { role: "GUITAR", names: ["신웅비", "임유빈"] },
-            { role: "TBA", names: ["윤민섭", "장민호"] }
-          ]
+          sessions: CLOUD_CLUB_BAND_SESSIONS.confession
         },
         {
           order: 10,
           title: "장마",
           originalArtist: "하현상",
           videoUrl: "https://www.youtube.com/watch?v=8vhNchRpn2c",
-          sessions: [
-            { role: "DRUM", names: ["양효빈"] },
-            { role: "BASS", names: ["인승진"] },
-            { role: "GUITAR", names: ["김재현"] },
-            { role: "KEYBOARD", names: ["우다현"] },
-            { role: "TBA", names: ["윤민섭"] }
-          ]
+          sessions: CLOUD_CLUB_BAND_SESSIONS.monsoon
         },
         {
           order: 12,
           title: "흔들리는 시간 속에",
           originalArtist: "극동아시아타이거즈",
           videoUrl: "https://www.youtube.com/watch?v=mCkZ48QTO64",
-          sessions: [
-            { role: "VOCAL", names: ["최재혁"] },
-            { role: "DRUM", names: ["양효빈"] },
-            { role: "BASS", names: ["이해준"] },
-            { role: "GUITAR", names: ["신웅비", "김재현"] }
-          ]
+          sessions: CLOUD_CLUB_BAND_SESSIONS.shakingTime
         }
       ]
     }
