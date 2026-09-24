@@ -13,6 +13,29 @@
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&#039;');
 
+  const eventDate = data.event?.date;
+  const formatEventDate = (format) => {
+    if (!eventDate) return '';
+
+    const date = new Date(`${eventDate.iso}T12:00:00Z`);
+    const month = date.toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' }).toUpperCase();
+    const weekday = date.toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' }).toUpperCase();
+
+    const formats = {
+      hero: `${month} ${eventDate.day} · ${weekday}`,
+      schedule: `${String(eventDate.month).padStart(2, '0')}.${String(eventDate.day).padStart(2, '0')} ${weekday}`,
+      'full-ko': `${eventDate.year}년 ${eventDate.month}월 ${eventDate.day}일 ${date.toLocaleDateString('ko-KR', { weekday: 'long', timeZone: 'UTC' })}`,
+      year: String(eventDate.year),
+      iso: eventDate.iso
+    };
+
+    return formats[format] ?? '';
+  };
+
+  document.querySelectorAll('[data-event-date]').forEach((node) => {
+    node.textContent = formatEventDate(node.dataset.eventDate);
+  });
+
   const renderSessions = (sessions = []) => {
     if (!sessions.length) return '<p class="session-pending">SESSIONS TBA</p>';
 
@@ -31,7 +54,7 @@
   const scheduleList = document.querySelector('#schedule-list');
   scheduleList.innerHTML = data.schedule.map((item, index) => `
     <li>
-      <time datetime="2026-10-31T${escapeHtml(item.time)}">
+      <time datetime="${escapeHtml(formatEventDate('iso'))}T${escapeHtml(item.time)}">
         <strong>${escapeHtml(item.time)}</strong>
         <span>${escapeHtml(item.endTime)}</span>
       </time>

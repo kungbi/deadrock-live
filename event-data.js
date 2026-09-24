@@ -1,4 +1,11 @@
 /* 이 파일의 내용만 바꾸면 시간표, 밴드, 셋리스트가 페이지에 반영됩니다. */
+const EVENT_DATE = Object.freeze({
+  iso: "2026-10-31",
+  year: 2026,
+  month: 10,
+  day: 31
+});
+
 const START_UP_SESSIONS = [
   { role: "VOCAL", names: ["박지혜"] },
   { role: "DRUM", names: ["김도연"] },
@@ -88,6 +95,9 @@ const CLOUD_CLUB_BAND_SESSIONS = {
 };
 
 window.EVENT_DATA = {
+  event: {
+    date: EVENT_DATE
+  },
   schedule: [
     {
       time: "17:00",
