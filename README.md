@@ -8,6 +8,7 @@
 </p>
 
 <p align="center">
+  <a href="#live-site">Live site</a> ·
   <a href="#run-locally">Run locally</a> ·
   <a href="#event">Event</a> ·
   <a href="#project-structure">Structure</a>
@@ -40,6 +41,12 @@ try restarting transaction._
 17:50 — 18:10   INTERMISSION
 18:10 — 19:45   클클밴드
 ```
+
+## Live site
+
+[https://deadrock-live.vercel.app](https://deadrock-live.vercel.app)
+
+`main` 브랜치에 푸시하면 Vercel Production 배포가 자동으로 시작됩니다.
 
 ## Run locally
 
