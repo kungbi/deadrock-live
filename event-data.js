@@ -155,35 +155,35 @@ window.EVENT_DATA = {
       songs: [
         {
           order: 1,
+          title: "Champagne Supernova",
+          originalArtist: "Oasis (ver. 백예린)",
+          videoUrl: "https://www.youtube.com/watch?v=sw241MxDtLU",
+          sessions: START_UP_SESSIONS
+        },
+        {
+          order: 2,
           title: "안녕 (Hello)",
           originalArtist: "조이",
           videoUrl: "https://www.youtube.com/watch?v=lNvBbh5jDcA",
           sessions: START_UP_SESSIONS
         },
         {
-          order: 2,
-          title: "???",
-          hint: "3초 메모리",
-          secret: true,
+          order: 3,
+          title: "금붕어",
+          originalArtist: "한로로",
+          videoUrl: "https://www.youtube.com/watch?v=dAgY7zUqd8E",
           sessions: START_UP_SESSIONS
         },
         {
-          order: 3,
+          order: 4,
           title: "ㅈㅣㅂ",
           originalArtist: "한로로",
           videoUrl: "https://www.youtube.com/watch?v=U4-cz9NHQv4",
           sessions: START_UP_SESSIONS
         },
         {
-          order: 4,
-          title: "???",
-          hint: "알콜 샤워",
-          secret: true,
-          sessions: START_UP_SESSIONS
-        },
-        {
           order: 5,
-          title: "???",
+          title: "Secret Track",
           hint: "합계 46",
           secret: true,
           sessions: START_UP_SESSIONS
