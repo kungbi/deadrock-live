@@ -116,9 +116,7 @@
         <summary class="song-summary">
           <span class="song-number">${String(song.order ?? index + 1).padStart(2, '0')}</span>
           <div class="song-copy">
-            ${song.secret
-              ? `<div class="secret-title-line"><h4>${escapeHtml(song.title)}</h4><span class="secret-label">SECRET TRACK</span></div>`
-              : `<h4>${escapeHtml(song.title)}</h4>`}
+            <h4>${escapeHtml(song.title)}</h4>
             ${song.secret
               ? `<p class="song-hint"><span>HINT</span><b>“${escapeHtml(song.hint)}”</b></p>`
               : song.originalArtist || song.duration
